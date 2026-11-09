@@ -1,0 +1,314 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath d='M20 20 L35 5 M75 45 L90 30 M45 90 L60 75 M105 105 L120 90 M5 65 L20 50' stroke='%230f2f52' stroke-width='2' opacity='0.06'/%3E%3C/svg%3E");
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: relative;
+  padding: 15px 0 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 20px 0;
+  font-size: 32px;
+  text-align: center;
+}
+
+#logo {
+  display: block;
+  width: 250px;
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto 10px;
+}
+
+.botones-usuario {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.botones-usuario button {
+  padding: 10px 18px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header-pagina {
+  padding-top: 46px;
+}
+
+.menu-principal {
+  display: flex;
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+}
+
+.menu-principal button {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 4px;
+  background: transparent;
+  color: white;
+  border: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu-principal button:hover {
+  background-color: #0b2341;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+}
+
+h2 {
+  margin: 30px 0 20px;
+  color: #0b2341;
+  text-align: center;
+  font-size: 28px;
+}
+
+h3 {
+  margin: 20px 0 10px;
+  color: #0b2341;
+  text-align: center;
+}
+
+p {
+  width: 80%;
+  margin: 15px auto 25px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.video-contenedor {
+  width: 100%;
+  text-align: center;
+}
+
+.video-construccion {
+  display: block;
+  width: 700px;
+  max-width: 90%;
+  height: auto;
+  margin: 30px auto 60px;
+}
+
+.carrusel {
+  width: 700px;
+  max-width: 90%;
+  margin: 30px auto 60px;
+  text-align: center;
+}
+
+.contenedor-imagen {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+}
+
+.contenedor-imagen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.carrusel h3 {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.controles-carrusel {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.punto {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: 1px solid #0b2341;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.punto.activo {
+  background-color: #0b2341;
+}
+
+.seccion-contacto {
+  width: 100%;
+  text-align: center;
+}
+
+.seccion-contacto h2 {
+  margin-top: 30px;
+}
+
+.seccion-contacto h3 {
+  margin-top: 20px;
+}
+
+.formulario-contacto {
+  width: 500px;
+  max-width: 90%;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.formulario-contacto label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.formulario-contacto input {
+  width: 100%;
+  min-height: 32px;
+  padding: 6px 8px;
+  border: 1px solid #999;
+  background-color: white;
+}
+
+.formulario-contacto textarea {
+  display: block;
+  width: 100%;
+  height: 150px;
+  padding: 8px;
+  border: 1px solid #999;
+  background-color: white;
+  resize: vertical;
+}
+
+.formulario-contacto .error {
+  width: 100%;
+  min-height: 0;
+  margin: 5px 0 10px;
+  color: #b00020;
+  text-align: left;
+  font-size: 14px;
+}
+
+.formulario-contacto button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background-color: #0b2341;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+  background-color: #333;
+}
+
+.formulario-contacto .mensaje-enviado {
+  width: 100%;
+  margin: 15px 0;
+  color: #176b32;
+  text-align: left;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 20px;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #0b2341;
+  color: white;
+  text-align: center;
+}
+
+footer span {
+  margin: 0 5px;
+}
+
+@media (max-width: 700px) {
+  header h1 {
+    margin-top: 65px;
+    font-size: 26px;
+  }
+
+  #logo {
+    width: 200px;
+  }
+
+  .botones-usuario {
+    right: 10px;
+    gap: 5px;
+  }
+
+  .botones-usuario button {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .menu-principal {
+    flex-wrap: wrap;
+  }
+
+  .menu-principal button {
+    flex: 1 1 30%;
+    padding: 12px 5px;
+    font-size: 13px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .contenedor-imagen {
+    height: 300px;
+  }
+
+  .formulario-contacto {
+    width: 90%;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
